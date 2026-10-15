@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b0f" />
+    <meta
+      name="description"
+      content="Portfólio pessoal de tecnologia. Conheça minha trajetória, habilidades e projetos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfólio | [Seu nome]" />
+    <meta
+      property="og:description"
+      content="Conheça minha trajetória, habilidades e projetos na área de tecnologia."
+    />
+    <title>Portfólio | [Seu nome]</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#inicio" aria-label="Ir para o início">
+          <span class="wordmark-symbol" aria-hidden="true">/</span>
+          <span data-personal="name">Seu nome</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PORTFÓLIO PESSOAL <span class="eyebrow-year">— <span id="hero-year"></span></span></p>
+          <p class="hero-greeting">Olá, eu sou</p>
+          <h1 id="hero-title"><span data-personal="name">Lucas Ferreira</span><span class="title-period">.</span></h1>
+          <p class="hero-role" data-personal="role">[Sua área de atuação ou interesse em tecnologia]</p>
+          <p class="hero-description" data-personal="intro">
+            [Apresente-se em poucas palavras. Conte o que você está construindo e o tipo de desafio que gostaria de resolver.]
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="scroll-cue" href="#sobre"><span class="scroll-line" aria-hidden="true"></span> DESÇA PARA CONHECER</a>
+        </div>
+
+        <div class="hero-art" aria-label="Composição abstrata inspirada em sistemas digitais" role="img">
+          <div class="art-coordinate coordinate-top">IDENTIDADE / 001</div>
+          <div class="art-grid"></div>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-core"><img src="img/lucas.JPEG" alt="Retrato em ambiente de tecnologia com iluminação azul" /></div>
+          <span class="art-cross cross-one" aria-hidden="true">+</span>
+          <span class="art-cross cross-two" aria-hidden="true">+</span>
+          <div class="art-coordinate coordinate-bottom"><span></span><span>↗</span></div>
+        </div>
+        <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>05</span></div>
+      </section>
+
+      <section class="content-section section-shell" id="sobre" aria-labelledby="about-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">01 / SOBRE</p>
+          <h2 id="about-title">Tecnologia com<br /><span>intenção e cuidado.</span></h2>
+        </div>
+        <div class="about-content" data-reveal>
+          <p data-personal="aboutPrimary">
+            Minha jornada na tecnologia começou com a curiosidade de entender como as coisas funcionam e transformar ideias em soluções digitais. Desde então, venho aprendendo sobre programação, desenvolvendo projetos e aprimorando minhas habilidades, sempre buscando novos desafios e oportunidades para crescer profissionalmente.
+          </p>
+          <p data-personal="aboutSecondary">
+            Gosto de aprender novas tecnologias, desenvolver projetos e encontrar soluções práticas por meio da programação. Busco evoluir minhas habilidades, enfrentar novos desafios e conquistar oportunidades para crescer profissionalmente na área de tecnologia.
+          </p>
+          <div class="about-note"><span class="note-mark">↳</span><span>Estou cursando Análise e Desenvolvimento de Sistemas (ADS) e buscando me desenvolver na área de Tecnologia da Informação. Tenho interesse em backend e infraestrutura, e meu objetivo é conquistar uma oportunidade para colocar meus conhecimentos em prática e crescer profissionalmente.</span></div>
+        </div>
+      </section>
+
+      <section class="content-section skills-section section-shell" id="habilidades" aria-labelledby="skills-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">02 / CAIXA DE FERRAMENTAS</p>
+          <h2 id="skills-title">Tecnologias que<br /><span>fazem parte da minha jornada.</span></h2>
+        </div>
+        <div class="skills-grid" id="skills-grid" data-reveal></div>
+
+      </section>
+
+      <section class="content-section projects-section section-shell" id="projetos" aria-labelledby="projects-title">
+        <div class="projects-heading" data-reveal>
+          <div class="section-heading">
+            <p class="section-kicker">03 / TRABALHOS SELECIONADOS</p>
+            <h2 id="projects-title">Conheça meus projetos<br /><span>e soluções em tecnologia.</span></h2>
+          </div>
+          <p class="projects-intro">Conheça alguns dos projetos que desenvolvi, explorando minhas habilidades, soluções e evolução na área de tecnologia.</p>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filtrar projetos" data-reveal>
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true" >Todos <span>03</span></button>
+          <button class="filter-button" type="button" data-filter="featured" aria-pressed="false">Destaques</button>
+          <button class="filter-button" type="button" data-filter="additional" aria-pressed="false">Outros projetos</button>
+        </div>
+        <div class="project-grid" id="project-grid" data-reveal ></div>
+        <p class="demo-disclaimer"><span aria-hidden="true">i</span> Alguns projetos podem não estar mais disponíveis online, mas você ainda pode conferir o código-fonte no GitHub.</p>
+      </section>
+
+      <section class="content-section contact-section section-shell" id="contato" aria-labelledby="contact-title">
+        <div class="contact-panel" data-reveal>
+          <div class="contact-copy">
+            <p class="section-kicker">04 / CONTATO</p>
+            <h2 id="contact-title">Boas ideias começam<br />com uma <span>conversa.</span></h2>
+            <p>Se você tem um projeto, uma oportunidade ou só quer trocar uma ideia sobre tecnologia, estou por aqui.</p>
+            <a class="button button-primary contact-cta" href="#contact-links">Encontrar meus contatos <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="contact-links" id="contact-links" aria-label="Canais de contato"></div>
+          <div class="contact-decoration" aria-hidden="true">/</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="wordmark footer-wordmark" href="#inicio"><span class="wordmark-symbol" aria-hidden="true">/</span><span data-personal="name">Seu nome</span></a>
+        <p>Feito com intenção<span class="footer-heart" aria-hidden="true">.</span> <span id="current-year"></span></p>
+        <a class="back-to-top" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
