@@ -105,8 +105,54 @@ button { font: inherit; }
 .orbit-two { width: 79%; aspect-ratio: 1; border-color: rgba(147,164,197,.14); }
 .orbit-one::before, .orbit-two::before { position: absolute; top: 50%; left: -4px; width: 7px; height: 7px; border: 1px solid #81a4ff; border-radius: 50%; background: var(--bg); content: ""; }
 .orbit-two::before { top: 24%; left: 17%; width: 5px; height: 5px; border-color: #8e9db9; }
-.art-core { position: absolute; z-index: 1; top: 50%; left: 50%; width: 50%; aspect-ratio: 1; overflow: hidden; transform: translate(-50%,-50%); border: 1px solid rgba(126,161,255,.62); border-radius: 50%; background: #101827; box-shadow: 0 0 70px rgba(62,102,201,.22), 0 0 0 7px rgba(9,11,15,.72); }
-.art-core img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+
+.art-core {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    aspect-ratio: 1;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center;
+
+    animation: flutuar 4s ease-in-out infinite;
+    transition: transform 0.35s ease;
+
+    border: 1px solid rgba(126, 161, 255, 0.62);
+    border-radius: 50%;
+    background: #101827;
+    box-shadow:
+        0 0 70px rgba(62, 102, 201, 0.22),
+        0 0 0 7px rgba(9, 11, 15, 0.72);
+}
+
+.art-core img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+/* Movimento suave de subida e descida */
+@keyframes flutuar {
+    0%, 100% {
+        top: 50%;
+    }
+
+    50% {
+        top: calc(50% - 5px);
+    }
+}
+
+/* Aumenta o círculo inteiro ao passar o mouse */
+.art-core:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
 .art-cross { position: absolute; color: #8ba8ee; font-family: var(--font-mono); font-size: 14px; }
 .cross-one { top: 22%; right: 23%; }
 .cross-two { bottom: 23%; left: 19%; color: #66748c; }
