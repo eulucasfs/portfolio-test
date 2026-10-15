@@ -3,7 +3,7 @@ const portfolioData = {
     name: "Lucas Ferreira",
     role: "Interesse em desenvolvimento Back-end, Python, JavaScript, SQL e cibersegurança, com foco em soluções tecnológicas, aprendizado contínuo e resolução de problemas.",
     intro:
-      "Desenvolvedor em formação, com interesse em Back-end, Python, JavaScript e SQL, focado em criar soluções eficientes e evoluir profissionalmente na área de tecnologia.",
+      "Desenvolvedor, com interesse em Back-end, Python, JavaScript e SQL, focado em criar soluções eficientes e evoluir profissionalmente na área de tecnologia.",
     aboutPrimary:
       "Minha jornada na tecnologia começou com a curiosidade de entender como as coisas funcionam e transformar ideias em soluções digitais. Desde então, venho aprendendo sobre programação, desenvolvendo projetos e aprimorando minhas habilidades, sempre buscando novos desafios e oportunidades para crescer profissionalmente.",
     aboutSecondary:
