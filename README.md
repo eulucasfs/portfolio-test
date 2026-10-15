@@ -22,7 +22,6 @@ As tecnologias utilizadas podem ser consultadas no código-fonte do projeto.
 - CSS3 — estilização e layout.
 - JavaScript — interatividade e funcionalidades.
 
-*Observação: mantenha nessa lista apenas as tecnologias realmente utilizadas no projeto.*
 
 ## ✨ Objetivos
 
