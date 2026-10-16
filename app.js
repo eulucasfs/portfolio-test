@@ -12,9 +12,9 @@ const portfolioData = {
   skills: [
     { name: "Linguagens", number: "01", items: ["Python", "JavaScript", "SQL", "Java", "C++", "TypeScript", "PHP"] },
     { name: "Front-end", number: "02", items: ["CSS"] },
-    { name: "Back-end", number: "03", items: ["Node.js", "Django", "Flask"] },
+    { name: "Back-end", number: "03", items: ["Node.js", "Django", "Flask", "POO", "CRUD", "APIs REST"] },
     { name: "Dados", number: "04", items: ["MySQL", "PostgreSQL"] },
-    { name: "Ferramentas", number: "05", items: ["Git", "Docker", "AWS"] },
+    { name: "Ferramentas", number: "05", items: ["Git/GitHub", "Docker", "AWS"] },
     { name: "Outras tecnologias", number: "06", items: ["Kubernetes", "TensorFlow", "React"] },
   ],
   projects: [
