@@ -151,6 +151,7 @@ button { font: inherit; }
 /* Aumenta o círculo inteiro ao passar o mouse */
 .art-core:hover {
     transform: translate(-50%, -50%) scale(1.08);
+    animation-play-state: paused;
 }
 
 .art-cross { position: absolute; color: #8ba8ee; font-family: var(--font-mono); font-size: 14px; }
