@@ -47,7 +47,7 @@ const portfolioData = {
     },
   ],
   contacts: [
-    { label: "E-mail", value: "contatoeulucasf@gmail.com", href: "gmail:contatoeulucasf@gmail.com" },
+    { label: "E-mail", value: "contatoeulucasf@gmail.com", href: "mailto:contatoeulucasf@gmail.com" },
     { label: "GitHub", value: "eulucasfs", href: "https://github.com/eulucasfs" },
     { label: "LinkedIn", value: "Lucas Ferreira", href: "https://www.linkedin.com/in/eulucasfs/?isSelfProfile=true" },
   ],
